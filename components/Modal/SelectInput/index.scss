@@ -1,0 +1,11 @@
+.input-select-container {
+  .label-item {
+    font-weight: $font-weight-medium;
+    .require {
+      color: $red-color;
+    }
+  }
+  .ant-select {
+    width: 100%;
+  }
+}

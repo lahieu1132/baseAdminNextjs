@@ -1,0 +1,7 @@
+.content {
+  padding: 10px;
+  @media (min-width: $grid-breakpoints-md) {
+    padding: 20px;
+  }
+  z-index: 0;
+}

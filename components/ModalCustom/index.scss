@@ -1,0 +1,25 @@
+.modal-ant {
+  .btn-primary {
+    color: $blue-color;
+    cursor: pointer;
+  }
+
+  .ant-modal-header {
+    background-color: $blue-color;
+    .ant-modal-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: $white-color;
+    }
+  }
+  .ant-modal-footer {
+    border-top: none;
+    .ant-btn-primary {
+      color: $white-color;
+      background-color: $blue-color !important;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

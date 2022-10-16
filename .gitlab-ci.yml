@@ -1,0 +1,32 @@
+# do not use "latest" here, if you want this to work in the future
+image: docker:20
+
+variables:
+  IMAGE_TAG: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
+  #  DOCKERFILE: ci_cd/${CI_ENVIRONMENT_NAME}/Dockerfile
+  DOCKERFILE: Dockerfile
+
+services:
+  - docker:dind
+
+# global cache (apply for all jobs in all stages)
+cache:
+  key: ${CI_COMMIT_REF_NAME} # only apply for current branch
+  paths:
+    - node_modules/
+
+stages:
+  - test
+
+before_script:
+  - docker version
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+
+test:
+  stage: test
+  environment: test
+  script:
+    - npm install
+    - npm run prettier
+    - npm run lint
+    - npm run check-types

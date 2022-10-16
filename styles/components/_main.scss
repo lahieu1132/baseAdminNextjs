@@ -1,0 +1,6 @@
+.main {
+  width: calc(100vw - #{$sidebar-width});
+  max-width: calc(1920 - #{$sidebar-width});
+  margin-left: $sidebar-width;
+  padding-left: 0;
+}

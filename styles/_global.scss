@@ -1,0 +1,98 @@
+/**
+Config here
+ */
+$sidebar-width: 260px;
+$sidebar-background: #001529;
+$navbar-height: 50px;
+$transition-layout: all 0.3s;
+$transition-layout-time: 0.3s;
+
+// End config
+
+$font-family: "Roboto", cursive !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold: 600 !default;
+$font-size-base: 0.875rem !default;
+$font-size-lg: 1rem !default;
+$font-size-sm: 0.75rem !default;
+$headings-font-weight: 400 !default;
+
+$spacer: 1rem !default;
+
+$spacers: (
+  0: 0,
+  1: (
+    $spacer * 0.25,
+  ),
+  2: (
+    $spacer * 0.5,
+  ),
+  3: $spacer,
+  4: (
+    $spacer * 1.5,
+  ),
+  5: (
+    $spacer * 3,
+  ),
+  6: (
+    $spacer * 4.5,
+  ),
+  7: (
+    $spacer * 6,
+  ),
+) !default;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+) !default;
+
+$grid-breakpoints-xs: 0 !default;
+$grid-breakpoints-sm: 576px !default;
+$grid-breakpoints-md: 768px !default;
+$grid-breakpoints-lg: 992px !default;
+$grid-breakpoints-xl: 1200px !default;
+$grid-breakpoints-xxl: 1400px !default;
+$grid-breakpoints-xxxl: 1600px !default;
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1600px,
+) !default;
+
+// Social colors
+$social-colors: (
+  "facebook": #3b5998,
+  "twitter": #1da1f2,
+  "google": #dc4e41,
+  "youtube": #f00,
+  "vimeo": #1ab7ea,
+  "dribbble": #ea4c89,
+  "github": #181717,
+  "instagram": #e4405f,
+  "pinterest": #bd081c,
+  "flickr": #0063dc,
+  "bitbucket": #0052cc,
+) !default;
+
+//color
+$border-color: #ade597 !default;
+$text-color: #000000;
+$white-color: #ffffff;
+$red-color: #cb2131;
+$blue-color: #0092ff;
+$primary: #127ff3;
+$gray: #c4c2c2;

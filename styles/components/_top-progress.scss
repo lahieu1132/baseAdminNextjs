@@ -1,0 +1,19 @@
+.top-progressbar {
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  .ant-progress-inner {
+    position: fixed;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+  }
+
+  &.show {
+    .ant-progress-inner {
+      top: 0;
+    }
+  }
+}

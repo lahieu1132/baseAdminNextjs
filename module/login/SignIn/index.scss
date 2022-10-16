@@ -1,0 +1,30 @@
+.container-sign-in {
+  border-radius: 8px;
+  min-width: 100%;
+  padding: 40px;
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .login-image {
+      width: 15vh;
+      height: 15vh;
+    }
+    .login-text {
+      color: $text-color;
+      font-size: 28px;
+      font-weight: $font-weight-bold;
+      padding-top: 30px;
+    }
+  }
+  .forgot-pass {
+    color: $blue-color;
+    justify-content: flex-end;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .pt-20 {
+    padding-top: 20px;
+  }
+}

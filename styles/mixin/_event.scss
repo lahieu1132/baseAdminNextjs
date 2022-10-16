@@ -1,0 +1,32 @@
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.btn-back-page {
+  background-color: $primary;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+}
+
+.hover-pointer {
+  &:hover {
+    cursor: pointer !important;
+  }
+}
+
+.hover-grab {
+  &:hover {
+    cursor: grab !important;
+  }
+}

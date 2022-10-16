@@ -1,0 +1,9 @@
+.number-input-container {
+  .label-item {
+    font-weight: $font-weight-medium;
+  }
+  .required::after {
+    content: "*";
+    color: $red-color;
+  }
+}
